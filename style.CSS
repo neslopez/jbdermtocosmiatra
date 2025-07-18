@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #fffafc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffeef3;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #f5c6cb;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #d48c8c;
+  margin-top: 10px;
+}
+
+.btn-turno {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e5b769;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.btn-turno:hover {
+  background-color: #d4a44f;
+}
+
+section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #c67c7c;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+iframe {
+  border: none;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ffeef3;
+  border-top: 1px solid #f5c6cb;
+  color: #777;
+  margin-top: 40px;
+}
+section {
+  margin: 60px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section#servicios ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+
+section#servicios li {
+  background-color: #fffafc;
+  border: 1px solid #f7d5d5;
+  padding: 12px 18px;
+  border-radius: 12px;
+  color: #444;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease;
+}
+
+section#servicios li:hover {
+  transform: scale(1.03);
+}
+
+h2::before {
+  content: "✨ ";
+  font-size: 1.2em;
+  color: #e5b769;
+}
+
+#sobre-mi p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+  padding: 10px;
+}
+#servicios i {
+  margin-right: 8px;
+  color: #e5b769;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .btn-turno {
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  section#servicios ul {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
